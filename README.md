@@ -1,4 +1,4 @@
-# josh-dev-workstation-example
+# dev-bootstrap
 
 TODO: Enter the cookbook description here.
 

@@ -1,6 +1,6 @@
-# josh-dev-workstation-example CHANGELOG
+# dev-bootstrap CHANGELOG
 
-This file is used to list changes made in each version of the josh-dev-workstation-example cookbook.
+This file is used to list changes made in each version of the dev-bootstrap cookbook.
 
 # 0.1.0
 

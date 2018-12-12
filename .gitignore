@@ -8,15 +8,27 @@
 
 # Bundler
 Gemfile.lock
-gems.locked
 bin/*
 .bundle/*
 
-# test kitchen
+# Test Kitchen
 .kitchen/
 .kitchen.local.yml
+test/integration/nodes/
 
 # Chef
 Berksfile.lock
 .zero-knife.rb
 Policyfile.lock.json
+package/*
+chef-client-running.pid
+chef-stacktrace.out
+remote_file/*
+nodes/*
+local-mode-cache/*
+vendor
+vendor/*
+.chef/
+
+# VSCode
+.vscode/

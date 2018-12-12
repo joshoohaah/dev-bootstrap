@@ -1,9 +1,9 @@
-name 'josh-dev-workstation-example'
+name 'dev-bootstrap'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'All Rights Reserved'
-description 'Installs/Configures josh-dev-workstation-example'
-long_description 'Installs/Configures josh-dev-workstation-example'
+description 'Installs/Configures dev-bootstrap'
+long_description 'Installs/Configures dev-bootstrap'
 version '0.1.0'
 chef_version '>= 13.0'
 
@@ -11,10 +11,20 @@ chef_version '>= 13.0'
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
 # uploaded to a Supermarket.
 #
-# issues_url 'https://github.com/<insert_org_here>/josh-dev-workstation-example/issues'
+# issues_url 'https://github.com/<insert_org_here>/dev-bootstrap/issues'
 
 # The `source_url` points to the development repository for this cookbook.  A
 # `View Source` link will be displayed on this cookbook's page when uploaded to
 # a Supermarket.
 #
-# source_url 'https://github.com/<insert_org_here>/josh-dev-workstation-example'
+# source_url 'https://github.com/<insert_org_here>/dev-bootstrap'
+
+chef_version '>= 14.7' if respond_to?(:chef_version)
+
+supports 'windows'
+
+# depends 'magic_shell'
+# depends 'java'
+# depends 'apt'
+depends 'chocolatey'
+depends 'powershell'

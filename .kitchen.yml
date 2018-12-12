@@ -19,7 +19,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[josh-dev-workstation-example::default]
+      - recipe[dev-bootstrap::default]
     verifier:
       inspec_tests:
         - test/integration/default

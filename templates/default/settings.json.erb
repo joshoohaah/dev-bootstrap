@@ -1,0 +1,18 @@
+// CUSTOM SETTINGS DEPLOYED from deployment script
+// Place your settings in this file to overwrite the default settings
+{
+
+"http.proxyStrictSSL": <%= @strict_ssl %>,
+"http.proxy": "<%= @proxy %>",
+"https.proxy": "<%= @proxy %>",
+    //-------- Files configuration --------
+    // Configure glob patterns for excluding files and folders.
+    "files.exclude": {
+        "**/.git": false,
+        "**/.svn": true,
+        "**/.DS_Store": true
+    },
+    // The default end of line character.
+    "files.eol": "\n"
+
+}

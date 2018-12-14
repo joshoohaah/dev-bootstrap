@@ -8,6 +8,8 @@
 require 'openssl'
 OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
 
-# include_recipe 'dev-bootstrap::java'
+# include_recipe 'dev-bootstrap::install_java'
 
 include_recipe 'dev-bootstrap::powershell'
+
+include_recipe 'dev-bootstrap::install_vscode'

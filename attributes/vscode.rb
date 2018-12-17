@@ -2,8 +2,6 @@
 # Cookbook Name:: dev-bootstrap
 # File:: vs_code.rb
 #
-# default['dev-bootstrap']['vscode']['proxy'] = 'http://pitc-cin.cloud.health.ge.com:80/'
-# default['dev-bootstrap']['vscode']['strict_ssl'] = false
 
 default['dev-bootstrap']['vscode'].tap do |vscode|
   vscode['proxy'] = 'http://pitc-cin.cloud.health.ge.com:80/'

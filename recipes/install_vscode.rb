@@ -64,9 +64,12 @@ code_path = value_for_platform_family(
   'debian'   => '',
   'rhel'     => ''
 )
+
+## TODO make guard here work and not run if plugin installed
 node['dev-bootstrap']['vscode']['plugins'].each do |plugin|
   execute "Install Plugin : #{plugin}"  do
     live_stream true
+    ignore_failure true
     timeout 40
     command "code --install-extension #{plugin} --force"
     not_if <<-EOH

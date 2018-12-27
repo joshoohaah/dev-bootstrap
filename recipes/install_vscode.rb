@@ -70,7 +70,7 @@ node['dev-bootstrap']['vscode']['plugins'].each do |plugin|
   execute "Install Plugin : #{plugin}"  do
     live_stream true
     ignore_failure true
-    timeout 40
+    timeout 10
     command "code --install-extension #{plugin} --force"
     not_if <<-EOH
       $InstalledExtensions= code --list-extensions

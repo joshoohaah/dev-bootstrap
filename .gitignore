@@ -32,3 +32,6 @@ vendor/*
 
 # VSCode
 .vscode/
+
+# TODO :  remove files reference and put files somewhere they can be hosted
+/files/*

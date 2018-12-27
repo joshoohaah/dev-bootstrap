@@ -30,3 +30,5 @@ depends 'chocolatey'
 depends 'powershell'
 depends 'iis'
 depends 'poise-python'
+
+depends 'sql_server'

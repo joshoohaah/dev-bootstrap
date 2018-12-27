@@ -30,13 +30,20 @@ if platform_family?('windows')
   
 end
 
-## TODO Put a guard around here so it does not run every time.
-execute 'install package' do
+## asciinema will not run on windows...yet.
+if platform_family?('linux')
+
+  ## TODO Put a guard around here so it does not run every time.
+  execute 'install package' do
     guard_interpreter :powershell_script
     sensitive false
     command 'pip3 install asciinema'
     action :run
     # not_if { a = Chef::Resource::PowershellScript.new("pip freeze") 
     #         a.include? 'asciinema'}
+  end
+  
+  else
+    log 'not installing any python packages in windows'
 end
 
